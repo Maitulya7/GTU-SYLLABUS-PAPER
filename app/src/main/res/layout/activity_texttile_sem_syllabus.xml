@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <FrameLayout android:id="@+id/frameStacklanguage"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnarrowone"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowlanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumnlanguage"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_weight="0.86"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtLanguage"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/lbl_select"
+                            style="@style/txtInterblack32_1" tools:text="@string/lbl_select"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtLanguageOne"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_7pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@string/lbl_your_semester"
+                            style="@style/txtInterblack32_1" tools:text="@string/lbl_your_semester"/>
+                    </LinearLayout>
+                    <ImageButton
+                        android:background="@drawable/layer_list_radius_22_5"
+                        android:id="@+id/btnArrowOne"
+                        android:layout_height="@dimen/_45pxh"
+                        android:layout_marginBottom="@dimen/_43pxv"
+                        android:layout_width="@dimen/_45pxh"
+                        android:paddingHorizontal="@dimen/_12pxh"
+                        android:paddingVertical="@dimen/_12pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_arrow1" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <View android:background="@color/indigo_800"
+                android:id="@+id/lineLineOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_170pxh"
+                android:layout_marginTop="@dimen/_23pxv" android:layout_width="@dimen/_170pxh"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerListsemone"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_64pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_32pxh}" tools:itemCount="2" tools:listitem="@layout/row_listsem_one1"/>
+            <ImageView android:id="@+id/imageAnimation500l"
+                android:layout_height="@dimen/_158pxh"
+                android:layout_marginEnd="@dimen/_81pxh"
+                android:layout_marginStart="@dimen/_81pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="@dimen/_158pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_animation500l_158x158}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_animation500l_158x158"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

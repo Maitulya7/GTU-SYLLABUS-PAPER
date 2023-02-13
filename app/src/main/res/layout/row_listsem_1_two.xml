@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:id="@+id/linearRowsem1two"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSem1Two"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/lbl_sem_1_22"
+            android:textAllCaps="false"
+            style="@style/btnGradientRounded_1" tools:text="@string/lbl_sem_1_22"/>
+        <FrameLayout android:id="@+id/frameStackrectanglefifteen"
+            android:layout_height="@dimen/_56pxv"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_width="@dimen/_149pxh" style="@style/groupStylecornerRadius_1">
+            <View
+                android:background="@drawable/rectangle_gradient_s_indigo_800_e_red_700_radius_10"
+                android:id="@+id/viewRectangleFifteen"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_56pxv" android:layout_width="@dimen/_150pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSEMThree"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_17pxv"
+                android:layout_marginEnd="@dimen/_38pxh"
+                android:layout_marginStart="@dimen/_38pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_sem_3"
+                style="@style/txtInterextrabold20" tools:text="@string/lbl_sem_3"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
