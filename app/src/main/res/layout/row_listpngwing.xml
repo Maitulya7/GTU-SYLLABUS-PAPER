@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <LinearLayout android:id="@+id/linearRowpngwing"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylebluegray_100cornerRadius">
+        <ImageView android:id="@+id/imagePngwing"
+            android:layout_height="@dimen/_31pxh"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="@dimen/_31pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_pngwing"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_pngwing"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnlanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_weight="0.74" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguageOne1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/lbl_computer"
+                style="@style/txtInterextrabold15" tools:text="@string/lbl_computer"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguageOne2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@string/lbl_engineering"
+                style="@style/txtInterextrabold15" tools:text="@string/lbl_engineering"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
